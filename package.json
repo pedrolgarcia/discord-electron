@@ -71,7 +71,8 @@
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "styled-components": "^5.1.1"
+        "styled-components": "^5.1.1",
+        "styled-icons": "^10.13.0"
     },
     "build": {
         "appId": "your.id",
@@ -84,6 +85,23 @@
         "files": [
             "package.json",
             "dist/**"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
         ]
     }
 }

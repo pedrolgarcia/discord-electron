@@ -30,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     --senary: #828386;
  
     --white: #fff;
+    --light-gray: #EDEDED;
     --gray: #8a8c90;
     --chat-input: rgb(64,68,75);
     --symbol: #74777a;
