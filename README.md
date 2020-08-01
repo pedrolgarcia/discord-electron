@@ -1,5 +1,5 @@
 ## Electron + TypeScript + React
-Boilerplate for a project using Electron, React and Typescript
+Cloning Discord interface using Electron, React and Typescript
 
 ## Installation
 
