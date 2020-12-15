@@ -1,24 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, Category, AddCategoryIcon } from './styles'
+import { Container, Category, AddCategoryIcon } from './styles';
 
-import ChannelButton from '../ChannelButton'
+import ChannelButton from '../ChannelButton';
 
 const ChannelList: React.FC = () => {
-  return (
-    <Container>
-      <Category>
-        <span>Canais de texto</span>
-        <AddCategoryIcon />
-      </Category>
+    return (
+        <Container>
+            <Category>
+                <span>Canais de texto</span>
+                <AddCategoryIcon />
+            </Category>
 
-      <ChannelButton channelName="chat-livre" />
-      <ChannelButton channelName="trabalho" />
-      <ChannelButton channelName="lolzinho" />
-      <ChannelButton channelName="csgo" />
-      <ChannelButton channelName="overwatch" />
-    </Container>
-  )
-}
+            <ChannelButton channelName="chat-livre" />
+            <ChannelButton channelName="trabalho" />
+            <ChannelButton channelName="lolzinho" />
+            <ChannelButton channelName="brawl" />
+            <ChannelButton channelName="overwatch" />
+        </Container>
+    );
+};
 
-export default ChannelList
+export default ChannelList;

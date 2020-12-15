@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, Title, ExpandIcon } from './styles'
+import { Container, Title, ExpandIcon } from './styles';
 
 const ServerName: React.FC = () => {
-  return (
-    <Container>
-      <Title>Servidor do Pedro</Title>
-      <ExpandIcon />
-    </Container>
-  )
-}
+    return (
+        <Container>
+            <Title>Primaltas</Title>
+            <ExpandIcon />
+        </Container>
+    );
+};
 
-export default ServerName
+export default ServerName;
